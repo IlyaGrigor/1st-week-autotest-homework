@@ -19,9 +19,9 @@
 
     <!-- a) Заголовок первого уровня со своим ФИО -->
     <h1>Илья Григорьев</h1>
-    <p>Я изучаю фронтенд с нуля и люблю спорт делать</p>
+    <p>Я изучаю фронтенд с нуля и люблю спорт</p>
     <div>
-        <img src=".idea/assets/images/Close.png" alt="Any picture">
+        <img src=".idea/assets/images/image.png" alt="Any picture">
     </div>
 
 </section>
@@ -80,19 +80,63 @@
     </div>
     <div data-cy="hw1-skills-box-pre">
         <h2>Мои скиллы</h2>
-        <label for="">
-            <input type="checkbox" name="html" id="html">
+        <label for="html">
+            HTML верстка
+            <input type="checkbox" name="html" id="html" checked>
         </label>
-
-        - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для
-        подписи
-        - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
+        <label for="git">
+            Создание Git Репозиториев
+            <input type="checkbox" name="git" id="git" checked>
+        </label>
+        <label for="css">
+            CSS
+            <input type="checkbox" name="css" id="css">
+        </label>
+        <label for="javascript">
+            JavaScript
+            <input type="checkbox" name="javascript" id="javascript">
+        </label>
     </div>
+    <div>
+    <input type="text" placeholder="Новый Скилл">
+    <button>Добавить</button>
+    </div>
+    <hr>
     <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
     <!-- 6) Создай здесь кнопку “Добавить” -->
     <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
 
-    <table data-cy="hw-about-table-pre">
+    <table data-cy="hw-about-table-pre" border="1">
+
+        <tr>
+            <th>п/п</th>
+            <th>Наименование</th>
+            <th>Количество</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Монитор</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ноут</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Клавиатура</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Мышь</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td colspan="2">Итого:</td>
+            <td>3</td>
+        </tr>
         <!-- 8) В таблице сделай 5 строк и 3 столбца.
                     - В первой строке ячейки заголовков, в остальных обычные ячейки
                     - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
@@ -100,6 +144,7 @@
     </table>
 </section>
 <footer data-cy="hw-footer-pre">
+    <a href="https://samurai.it-incubator.io/ru?ref=3B1A2D">IT-Incubator</a>
     <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
 </footer>
 </body>
